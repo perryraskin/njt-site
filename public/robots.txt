@@ -1,6 +1,6 @@
-# https://njt.app robots.txt
+# https://www.vianj.app robots.txt
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://njt.app/sitemap.xml 
+Sitemap: https://www.vianj.app/sitemap.xml
