@@ -25,6 +25,15 @@ export function Hero() {
               announced! Position yourself strategically and avoid the rush hour
               dash across the station.
             </p>
+            <Link
+              href="#penn-station-track-predictor"
+              className="inline-flex items-center text-sm font-semibold text-slate-700 underline decoration-slate-300 underline-offset-4 transition-colors hover:text-slate-950"
+            >
+              See how the Penn Station track predictor works
+              <span aria-hidden="true" className="ml-1">
+                →
+              </span>
+            </Link>
             <div className="flex justify-center md:justify-start">
               <Link
                 href="https://apps.apple.com/us/app/njt-departures-predict-tracks/id6742149117"

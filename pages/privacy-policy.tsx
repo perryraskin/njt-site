@@ -1,8 +1,21 @@
+import Head from "next/head";
 import { Footer } from "../components/Footer";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="flex min-h-screen flex-col relative overflow-hidden">
+    <>
+      <Head>
+        <title>Privacy Policy | VIA NJ</title>
+        <meta
+          name="description"
+          content="Read the privacy policy for the VIA NJ departures and track predictions app."
+        />
+        <link
+          rel="canonical"
+          href="https://www.vianj.app/privacy-policy"
+        />
+      </Head>
+      <div className="flex min-h-screen flex-col relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute inset-0 bg-[#f8faff]"></div>
@@ -100,7 +113,8 @@ export default function PrivacyPolicy() {
                 </p>
                 <p>
                   Website refers to NJ Transit Departures and Track Predictions,
-                  accessible from <a href="https://njt.app">https://njt.app</a>
+                  accessible from{" "}
+                  <a href="https://www.vianj.app">https://www.vianj.app</a>
                 </p>
                 <p>
                   You means the individual accessing or using the Service, or
@@ -439,7 +453,8 @@ export default function PrivacyPolicy() {
         </div>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
