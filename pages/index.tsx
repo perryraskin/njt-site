@@ -47,10 +47,10 @@ export default function LandingPage() {
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
-          content="https://www.vianj.app/og.png"
+          content="https://www.vianj.app/og.jpg"
         />
-        <meta property="og:image:width" content="1731" />
-        <meta property="og:image:height" content="909" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="672" />
         <meta
           property="og:image:alt"
           content="ViaNJ: Trains & Tickets"
@@ -58,7 +58,7 @@ export default function LandingPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="https://www.vianj.app/og.png" />
+        <meta name="twitter:image" content="https://www.vianj.app/og.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
