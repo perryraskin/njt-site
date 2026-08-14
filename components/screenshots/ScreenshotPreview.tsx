@@ -93,8 +93,8 @@ export function ScreenshotPreview({
             <Image
               src={screenshots[currentIndex].src || "/placeholder.svg"}
               width={500}
-              height={1000}
-              alt={`App screenshot: ${screenshots[currentIndex].src}`}
+              height={1086}
+              alt={screenshots[currentIndex].alt}
               className="max-h-[80vh] w-auto mx-auto object-contain"
             />
           </div>

@@ -4,20 +4,35 @@ import { Banner } from "../components/Banner";
 import { Hero } from "../components/Hero";
 import { Screenshots } from "../components/screenshots/Screenshots";
 import { Description } from "../components/Description";
-import { TrackPredictorGuide } from "../components/TrackPredictorGuide";
+import { FeatureOverview } from "../components/FeatureOverview";
 import { Footer } from "../components/Footer";
 
-const title = "Penn Station Track Predictor for NJ Transit | VIA NJ";
+const title = "ViaNJ: NJ Transit Trains & Tickets | Official App";
 const description =
-  "Predict your NJ Transit track at New York Penn Station before it is announced. View live departures and prepare to board with the VIA NJ iPhone app.";
+  "See live NJ Transit rail departures, track predictions, service alerts, tickets, checkout, recovery, and Apple Wallet tools in ViaNJ for iPhone.";
 
 export default function LandingPage() {
   const screenshots: Screenshot[] = [
-    { src: "/screenshots/1.png" },
-    { src: "/screenshots/2.png" },
-    { src: "/screenshots/3.png" },
-    { src: "/screenshots/4.png" },
-    { src: "/screenshots/5.png" },
+    {
+      src: "/screenshots/1.jpg",
+      alt: "ViaNJ live departures with boarding status and track predictions",
+    },
+    {
+      src: "/screenshots/2.jpg",
+      alt: "ViaNJ My Tickets screen with an active NJ Transit ticket",
+    },
+    {
+      src: "/screenshots/3.jpg",
+      alt: "An activated NJ Transit ticket ready to add to Apple Wallet",
+    },
+    {
+      src: "/screenshots/4.jpg",
+      alt: "ViaNJ integrated ticket checkout route selection",
+    },
+    {
+      src: "/screenshots/5.jpg",
+      alt: "An NJ Transit ticket available from the iPhone Lock Screen",
+    },
   ];
 
   return (
@@ -32,23 +47,30 @@ export default function LandingPage() {
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
-          content="https://www.vianj.app/app/apple-icon.png"
+          content="https://www.vianj.app/og.png"
         />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:image:width" content="1731" />
+        <meta property="og:image:height" content="909" />
+        <meta
+          property="og:image:alt"
+          content="ViaNJ: Trains & Tickets"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="https://www.vianj.app/og.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "MobileApplication",
-              name: "VIA NJ: NJ Transit Departures & Track Predictions",
+              name: "ViaNJ: Trains & Tickets",
               operatingSystem: "iOS",
               applicationCategory: "TravelApplication",
               url: "https://www.vianj.app/",
               downloadUrl:
-                "https://apps.apple.com/us/app/njt-departures-predict-tracks/id6742149117",
+                "https://apps.apple.com/us/app/vianj-trains-tickets/id6754224152",
               description,
             }),
           }}
@@ -70,7 +92,7 @@ export default function LandingPage() {
 
         <main className="flex-1 relative z-10">
           <Hero />
-          <TrackPredictorGuide />
+          <FeatureOverview />
           <Screenshots screenshots={screenshots} />
           <Description />
         </main>

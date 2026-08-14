@@ -1,10 +1,10 @@
-# njt.app
+# ViaNJ website
 
 <div align="center">
-  <img src="public/njt-app-logo-new.png" alt="NJT App Icon" width="120" height="120" style="border-radius: 20px;" />
+  <img src="public/app/apple-icon.png" alt="ViaNJ app icon" width="120" height="120" style="border-radius: 20px;" />
 </div>
 
-A modern iOS showcase landing page built with Next.js 15, React 19, and TypeScript. This project features a beautiful landing page with animated backgrounds, screenshots showcase, and responsive design.
+The public ViaNJ landing page and privacy policy, built with Next.js, React, and TypeScript.
 
 ## Tech Stack
 

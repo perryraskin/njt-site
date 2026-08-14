@@ -21,8 +21,8 @@ export function ScreenshotGrid({
             <Image
               src={screenshot.src || "/placeholder.svg"}
               width={250}
-              height={500}
-              alt={`App screenshot: ${screenshot.src}`}
+              height={543}
+              alt={screenshot.alt}
               className="rounded-xl shadow-md mb-2"
             />
           </button>

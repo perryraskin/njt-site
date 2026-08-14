@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
                   <li>
                     <strong>Contact information:</strong> your name, email
                     address, and phone number when you sign in to an NJ Transit
-                    account, buy a guest ticket, or recover a receipt.
+                    account, use integrated checkout, or recover a receipt.
                   </li>
                   <li>
                     <strong>NJ Transit account information:</strong> your NJ
@@ -104,7 +104,7 @@ export default function PrivacyPolicy() {
                     request;
                   </li>
                   <li>
-                    route and recover NJ Transit guest-ticket receipts;
+                    route and recover NJ Transit ticket receipts;
                   </li>
                   <li>
                     provide ViaNJ Pro, restore purchases, and determine whether
@@ -123,9 +123,9 @@ export default function PrivacyPolicy() {
                 </p>
               </Section>
 
-              <Section title="Guest checkout and receipt recovery">
+              <Section title="Ticket checkout and receipt recovery">
                 <p>
-                  When you start a guest checkout, ViaNJ sends your delivery
+                  When you start ticket checkout, ViaNJ sends your delivery
                   email to a ViaNJ-operated routing service hosted by
                   Cloudflare. The service creates a private purchase address so
                   ViaNJ can receive the NJ Transit receipt, associate it with

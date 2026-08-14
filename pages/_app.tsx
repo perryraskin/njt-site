@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
         {/* Favicon and App Icons */}
         <link rel="icon" type="image/x-icon" href="/app/favicon.ico" />
-        <link rel="icon" type="image/svg+xml" href="/app/icon0.svg" />
+        <link rel="icon" type="image/png" href="/app/icon1.png" />
         <link rel="apple-touch-icon" href="/app/apple-icon.png" />
         <link rel="manifest" href="/app/manifest.json" />
 
@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="NJT App" />
+        <meta name="apple-mobile-web-app-title" content="ViaNJ" />
       </Head>
       <Component {...pageProps} />
       <Analytics />

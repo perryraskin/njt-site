@@ -1,6 +1,6 @@
-# VIA NJ
+# ViaNJ
 
-> VIA NJ is an iPhone app for NJ Transit departures and track predictions at New York Penn Station.
+> ViaNJ is an iPhone app for NJ Transit rail departures, tickets, checkout, recovery, and Apple Wallet.
 
 ## Website
 
@@ -9,13 +9,16 @@
 
 ## App
 
-- App Store: https://apps.apple.com/us/app/njt-departures-predict-tracks/id6742149117
+- App Store: https://apps.apple.com/us/app/vianj-trains-tickets/id6754224152
 - Platform: iOS
 
 ## Core features
 
 - Live NJ Transit departures
-- Predicted track numbers for trains departing New York Penn Station
-- A fast, streamlined view designed for daily commuters
+- Boarding status, service alerts, favorite stations, and track predictions
+- Ticket organization, activation, receipt recovery, and Apple Wallet
+- Optional ViaNJ Pro integrated ticket purchasing, automatic import, and purchase recovery
 
 Track predictions are estimates. Riders should confirm final track assignments on official station boards and announcements before boarding.
+
+ViaNJ Pro does not include NJ Transit fares. NJ Transit sells and charges each fare separately. ViaNJ is not affiliated with or endorsed by NJ Transit.

@@ -1,6 +1,6 @@
 {
-  "name": "NJT Departures and Track Predictions",
-  "short_name": "NJT App",
+  "name": "ViaNJ: Trains & Tickets",
+  "short_name": "ViaNJ",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
