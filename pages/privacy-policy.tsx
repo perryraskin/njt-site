@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
                 <h1 className="text-4xl font-bold tracking-tighter text-gray-900">
                   Privacy Policy
                 </h1>
-                <p className="text-gray-600">Last updated: August 13, 2026</p>
+                <p className="text-gray-600">Last updated: August 19, 2026</p>
                 <p className="text-lg leading-8">
                   This policy explains how ViaNJ handles information when you
                   use the ViaNJ iOS app or visit vianj.app. ViaNJ is an
@@ -184,6 +184,34 @@ export default function PrivacyPolicy() {
                 </p>
               </Section>
 
+              <Section title="Location, maps, and Rail Passport">
+                <p>
+                  If you grant When In Use location permission, ViaNJ can show
+                  your current location on Rail Radar and an individual train
+                  journey map. ViaNJ processes that location on your device. It
+                  does not store it on ViaNJ servers, transmit it with
+                  diagnostics, use it to estimate a train&apos;s location, or use
+                  it to add journeys to Rail Passport.
+                </p>
+                <p>
+                  Rail Passport records only journeys you explicitly choose to
+                  add. Passport history is stored locally on your device and is
+                  not uploaded to ViaNJ servers.
+                </p>
+              </Section>
+
+              <Section title="Private iCloud ticket backup">
+                <p>
+                  ViaNJ Pro can automatically back up eligible checkout tickets
+                  to your private iCloud database using Apple CloudKit. ViaNJ
+                  does not operate or have access to a shared server database
+                  containing these backups. Apple processes and stores the
+                  backup under your iCloud account, subject to Apple&apos;s terms
+                  and privacy policy. You can control ticket backup in ViaNJ
+                  Settings and your device&apos;s iCloud settings.
+                </p>
+              </Section>
+
               <Section title="Anonymous diagnostics choice">
                 <p>
                   Sharing anonymous diagnostics is enabled by default. You can
@@ -192,6 +220,24 @@ export default function PrivacyPolicy() {
                   being uploaded. Diagnostics are used for app analytics,
                   security, and reliability, not advertising or cross-app
                   tracking.
+                </p>
+                <p>
+                  “Anonymous” means that the diagnostic event payload excludes
+                  direct rider identifiers and sensitive ticket or payment
+                  contents. The upload is authenticated with the same random,
+                  persistent installation token that protects receipt recovery.
+                  Stored diagnostic events use a temporary app-launch session
+                  ID and do not include that installation token, purchase email,
+                  delivery email, name, phone number, confirmation number,
+                  ticket ID, barcode, card data, or page contents.
+                </p>
+                <p>
+                  Accepted diagnostic events are retained for up to 30 days.
+                  Disabling diagnostics clears events still queued on your
+                  device and prevents new uploads; it does not immediately
+                  delete events already accepted by the service. You may
+                  contact ViaNJ to request deletion of information controlled
+                  by ViaNJ.
                 </p>
               </Section>
 
@@ -247,14 +293,17 @@ export default function PrivacyPolicy() {
 
               <Section title="Retention and security">
                 <p>
-                  ViaNJ retains server-side information only for as long as
-                  reasonably necessary to provide receipt recovery,
-                  diagnostics, security, support, and legal compliance. The
-                  exact period may vary with the type of information and the
-                  reason it is held. Information stored locally remains until
-                  you remove it in the app, sign out, clear the applicable
-                  setting, or delete the app, subject to iOS and Keychain
-                  behavior.
+                  Diagnostic events expire after 30 days. Receipt recovery
+                  records remain available until the matching ticket is
+                  successfully imported and acknowledged. ViaNJ retains the
+                  encrypted delivery address and private purchase route while
+                  needed to forward and recover receipts for that installation,
+                  and retains other server-side information only as reasonably
+                  necessary for service delivery, security, support, and legal
+                  compliance. Information stored locally remains until you
+                  remove it in the app, sign out, clear the applicable setting,
+                  or delete the app, subject to iOS, Keychain, Wallet, and
+                  iCloud behavior.
                 </p>
                 <p>
                   ViaNJ uses transport encryption, device Keychain storage,
