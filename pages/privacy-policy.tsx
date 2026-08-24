@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
                 <h1 className="text-4xl font-bold tracking-tighter text-gray-900">
                   Privacy Policy
                 </h1>
-                <p className="text-gray-600">Last updated: August 19, 2026</p>
+                <p className="text-gray-600">Last updated: August 24, 2026</p>
                 <p className="text-lg leading-8">
                   This policy explains how ViaNJ handles information when you
                   use the ViaNJ iOS app or visit vianj.app. ViaNJ is an
@@ -88,9 +88,11 @@ export default function PrivacyPolicy() {
                     version and build, iOS version, a temporary session ID,
                     feature events such as app launch, checkout progress,
                     subscription actions, and ticket recovery outcomes, plus
-                    limited technical attributes. Diagnostic events are
-                    designed not to contain names, contact information, payment
-                    details, ticket barcodes, or full receipt contents.
+                    limited technical attributes. ViaNJ also derives a
+                    one-way, pseudonymous analytics identifier from the
+                    installation credential on its server. Diagnostic events
+                    are designed not to contain names, contact information,
+                    payment details, ticket barcodes, or full receipt contents.
                   </li>
                 </ul>
               </Section>
@@ -226,16 +228,25 @@ export default function PrivacyPolicy() {
                   direct rider identifiers and sensitive ticket or payment
                   contents. The upload is authenticated with the same random,
                   persistent installation token that protects receipt recovery.
-                  Stored diagnostic events use a temporary app-launch session
-                  ID and do not include that installation token, purchase email,
+                  ViaNJ&apos;s support database stores a temporary app-launch
+                  session ID and does not store that installation token with
+                  the event. For aggregate product analytics, ViaNJ&apos;s server
+                  uses a separate secret to create a one-way pseudonymous
+                  installation identifier before sending the same validated,
+                  categorical events to PostHog. Person profiles, session
+                  replay, and automatic screen or interaction capture are not
+                  enabled. These systems do not receive the purchase email,
                   delivery email, name, phone number, confirmation number,
                   ticket ID, barcode, card data, or page contents.
                 </p>
                 <p>
-                  Accepted diagnostic events are retained for up to 30 days.
+                  Exact support-diagnostic events in ViaNJ&apos;s database are
+                  retained for up to 30 days. Pseudonymous product-analytics
+                  events in PostHog may be retained for up to seven years so
+                  ViaNJ can measure long-term feature adoption and reliability.
                   Disabling diagnostics clears events still queued on your
                   device and prevents new uploads; it does not immediately
-                  delete events already accepted by the service. You may
+                  delete events already accepted by either service. You may
                   contact ViaNJ to request deletion of information controlled
                   by ViaNJ.
                 </p>
@@ -261,6 +272,12 @@ export default function PrivacyPolicy() {
                     <strong>Cloudflare:</strong> hosting and security for
                     ViaNJ&apos;s receipt-routing, recovery, and diagnostic
                     services;
+                  </li>
+                  <li>
+                    <strong>PostHog:</strong> pseudonymous product analytics
+                    using only ViaNJ&apos;s validated categorical diagnostic
+                    events; PostHog is configured to discard IP addresses and
+                    does not receive session replays from the app;
                   </li>
                   <li>
                     <strong>Supabase:</strong> app data services used for train
@@ -293,7 +310,9 @@ export default function PrivacyPolicy() {
 
               <Section title="Retention and security">
                 <p>
-                  Diagnostic events expire after 30 days. Receipt recovery
+                  Exact support-diagnostic events expire after 30 days;
+                  pseudonymous product-analytics events processed by PostHog
+                  may be retained for up to seven years. Receipt recovery
                   records remain available until the matching ticket is
                   successfully imported and acknowledged. ViaNJ retains the
                   encrypted delivery address and private purchase route while
