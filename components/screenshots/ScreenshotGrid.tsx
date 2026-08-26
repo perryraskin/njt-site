@@ -11,7 +11,7 @@ export function ScreenshotGrid({
   onPreviewOpen,
 }: ScreenshotGridProps) {
   return (
-    <div className="hidden lg:grid sm:grid-cols-2 lg:grid-cols-5 gap-6 justify-items-center">
+    <div className="hidden lg:flex lg:flex-wrap lg:justify-center gap-6">
       {screenshots.map((screenshot, index) => (
         <div key={index} className="max-w-[250px]">
           <button

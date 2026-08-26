@@ -33,6 +33,14 @@ export default function LandingPage() {
       src: "/screenshots/5.jpg",
       alt: "An NJ Transit ticket available from the iPhone Lock Screen",
     },
+    {
+      src: "/screenshots/6.jpg",
+      alt: "ViaNJ Rail Radar showing live trains across the NJ Transit rail system",
+    },
+    {
+      src: "/screenshots/7.jpg",
+      alt: "ViaNJ journey map showing live train and rider locations for a departure",
+    },
   ];
 
   return (
